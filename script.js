@@ -19,7 +19,7 @@ function makePageForEpisodes(episodeList) {
         '<div class="column">'+
         '<div class="card">' +
         '<header class="header">'+
-        "<h2>"+(episodeList[ep].name)+" - S0"+(episodeList[ep].season)+"E0"+(episodeList[ep].number)+"</h2>"+
+        "<h2>"+(episodeList[ep].name)+" - S"+(('0' + episodeList[ep].season).slice(-2))+"E"+(('0' + episodeList[ep].number).slice(-2))+"</h2>"+
         '</header>'+
         '<img class="image" src='+(episodeList[ep].image.medium)+'>' +
         '<div class="description">'+(episodeList[ep].summary)+'</div>' +
