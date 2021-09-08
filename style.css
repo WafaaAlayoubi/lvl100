@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1f1f1;
+
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 15px 5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: #fff;
+  height: 75%;
+}
+
+.header {
+  border: 2px solid black ;
+  border-radius: 10px;
+}
+
+.image {
+  padding: 16px;
+}
+.description {
+  padding: 0px 16px 16px 16px;
+  color: rgb(87, 85, 85);
+  font: 18px Arial, Helvetica, sans-serif;
+  text-align: left;
+}
